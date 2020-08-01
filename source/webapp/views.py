@@ -13,6 +13,13 @@ def index_view(request):
         'cards': data
     })
 
+def card_find(request):
+    if request.method == "GET":
+        data = Card.objects.filter(name=request.GET.get('name'))
+    return render(request, 'index.html', context={
+        'cards': data
+    })
+
 def card_create_view(request):
     if request.method == "GET":
         return render(request, 'card_create.html', context={

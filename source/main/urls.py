@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from webapp.views import index_view, card_create_view, card_update_view, card_delete_view
+from webapp.views import index_view, card_create_view, card_update_view, card_delete_view, \
+    card_find
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +24,5 @@ urlpatterns = [
     path('cards/add/', card_create_view, name='card_create'),
     path('card/<int:pk>/update/', card_update_view, name='card_update'),
     path('card/<int:pk>/delete/', card_delete_view, name='card_delete'),
+    path('card/find', card_find, name='card_find'),
 ]

@@ -5,6 +5,14 @@
 
 {% block content %}
     <h1>Guest Cards!</h1>
+    <form action="{% url "card_find" %}" method="get">
+        {% csrf_token %}
+        <input type="text" name="name">
+        <br/>
+        <input type="submit" value="find"/>
+    </form>
+    <br/><br/>
+
     {% for card in cards %}
         <div class="card">
         <b><p>{{ card.name }} ({{ card.mail }})</p></b>
