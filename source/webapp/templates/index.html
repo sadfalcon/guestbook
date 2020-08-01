@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 
 {% block title %}Hello{% endblock %}
+{% block menu %} <li><a href="{% url 'card_create' %}">Create Card</a></li>{% endblock %}
 
 {% block content %}
     <h1>Guest Cards!</h1>
     {% for card in cards %}
-        <p>{{ card.name }} ({{ card.mail }})</p>
+        <div class="card">
+        <b><p>{{ card.name }} ({{ card.mail }})</p></b>
         <p>{{ card.text }}</p>
+        </div>
+        <br>
 
-        <hr>
     {% endfor %}
 
 {% endblock %}
