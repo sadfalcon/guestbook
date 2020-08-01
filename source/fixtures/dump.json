@@ -1,0 +1,92 @@
+[
+{
+  "model": "webapp.card",
+  "pk": 1,
+  "fields": {
+    "name": "Will Smith",
+    "mail": "will_smith@example.com",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "created_at": "2020-08-01T06:19:29.068Z",
+    "updated_at": "2020-08-01T06:21:45.533Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.card",
+  "pk": 2,
+  "fields": {
+    "name": "Ben Stiller",
+    "mail": "ben@example.com",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    "created_at": "2020-08-01T06:22:32.899Z",
+    "updated_at": "2020-08-01T06:23:04.698Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.card",
+  "pk": 3,
+  "fields": {
+    "name": "Jim Carry",
+    "mail": "jim@example.com",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "created_at": "2020-08-01T06:24:03.276Z",
+    "updated_at": "2020-08-01T06:24:03.276Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.card",
+  "pk": 4,
+  "fields": {
+    "name": "Jonhy Depp",
+    "mail": "jonhy@example.com",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "created_at": "2020-08-01T06:24:38.141Z",
+    "updated_at": "2020-08-01T06:24:38.141Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.card",
+  "pk": 5,
+  "fields": {
+    "name": "Brad Pitt",
+    "mail": "brad@example.com",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    "created_at": "2020-08-01T06:25:33.742Z",
+    "updated_at": "2020-08-01T06:25:33.742Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.card",
+  "pk": 6,
+  "fields": {
+    "name": "Tom Holland",
+    "mail": "tom_holland@example.com",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimeng",
+    "created_at": "2020-08-01T06:26:15.679Z",
+    "updated_at": "2020-08-01T06:26:15.679Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$cdIsX89pStxm$5/36QzLzT2h/3FNslugZOGWgVR41xqtpp4Om6Hrz8vY=",
+    "last_login": "2020-08-01T05:58:43.182Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-01T05:58:19.100Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
