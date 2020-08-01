@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete{% endblock %}
+
+{% block menu %}
+    <li><a href="{% url 'index' %}">Отмена</a></li>
+{% endblock %}
+
+{% block content %}
+    <h1>Вы уверены, что хотите удалить карточку? "{{ card.name }}"?</h1>
+
+    <form action="{% url "card_delete" card.pk %}" method="post">
+        {% csrf_token %}
+        <p><input type="submit" value="Да"></p>
+        <p><a href="{% url 'index' %}">Отмена</a></p>
+    </form>
+    <h3>Текст: </h3>
+    <p>{{ card.text }}</p>
+{% endblock %}

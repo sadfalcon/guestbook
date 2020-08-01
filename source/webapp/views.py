@@ -64,3 +64,12 @@ def card_update_view(request, pk):
     else:
         return HttpResponseNotAllowed(permitted_methods=['GET', 'POST'])
 
+def card_delete_view(request, pk):
+    card = get_object_or_404(Card, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'card_delete.html', context={'card': card})
+    elif request.method == 'POST':
+        card.delete()
+        return redirect('index')
+    else:
+        return HttpResponseNotAllowed(permitted_methods=['GET', 'POST'])
