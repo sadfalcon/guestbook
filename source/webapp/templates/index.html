@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Hello{% endblock %}
+
+{% block content %}
+    <h1>Guest Cards!</h1>
+    {% for card in cards %}
+        <p>{{ card.name }} ({{ card.mail }})</p>
+        <p>{{ card.text }}</p>
+
+        <hr>
+    {% endfor %}
+
+{% endblock %}
