@@ -9,6 +9,8 @@
         <div class="card">
         <b><p>{{ card.name }} ({{ card.mail }})</p></b>
         <p>{{ card.text }}</p>
+        <a href="{% url 'card_update' card.pk %}" class="button-1">Update</a>
+        <a href="{% url 'card_delete' card.pk %}" class="button-2">Delete</a>
         </div>
         <br>
 
