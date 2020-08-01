@@ -7,7 +7,7 @@ from webapp.forms import CardForm
 # Create your views here.
 
 def index_view(request):
-    data = Card.objects.all().order_by('-created_at')
+    data = Card.objects.order_by('-created_at').filter(status='active')
 
     return render(request, 'index.html', context={
         'cards': data
